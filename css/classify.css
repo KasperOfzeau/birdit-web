@@ -16,6 +16,10 @@
     margin-top: 20px;
 }
 
+#img {
+    display: none;
+}
+
 .cartoon-bird {
     width: 80%;
 }
