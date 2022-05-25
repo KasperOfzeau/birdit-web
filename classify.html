@@ -1,21 +1,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Birdit - Dashboard</title>
+<!-- Icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- ML 5 -->
 <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- CSS -->
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div>
     <label for="file">Upload Image</label>
     <input type="file" accept="image/*;capture=camera" id="file">
+    <button class="buttonload button" id="submit" disabled>
+        <i class="fa fa-spinner fa-spin"></i> Laden
+    </button>
 </div>
 <div>
     <img id="img">
 </div>
-<div id="message">Please wait, loading model...</div>
 <script src="js/main.js"></script>
 </body>
