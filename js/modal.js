@@ -1,8 +1,8 @@
 // Get the modal
-var modal = document.getElementById("tutorialodal");
+let modal = document.getElementById("tutorialodal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let closeButton = document.getElementsByClassName("close-btn")[0];
 
 // When the user clicks on the button, open the modal
 function openModal() {
@@ -10,7 +10,7 @@ function openModal() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+closeButton.onclick = function() {
   modal.style.display = "none";
 }
 
