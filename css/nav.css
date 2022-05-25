@@ -1,0 +1,9 @@
+nav {
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    width: 165px;
+    margin: 10px auto;
+}
