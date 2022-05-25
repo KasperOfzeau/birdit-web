@@ -9,18 +9,36 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/classify.css">
 </head>
 <body>
-<div>
-    <label for="file">Upload Image</label>
-    <input type="file" accept="image/*;capture=camera" id="file">
-    <button class="buttonload button" id="submit" disabled>
-        <i class="fa fa-spinner fa-spin"></i> Laden
-    </button>
-</div>
-<div>
-    <img id="img">
-</div>
-<script src="js/main.js"></script>
+    <nav>
+        <div class="logo">
+            <img class="logo" src="assets/logo.jpg">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Foto verzenden</h1>
+                <p>Verzend hier de foto van je vogel! En kom er achter welke vogel je op de foto hebt gezet! Daarnaast kom je vanalles te weten over de vogel!</p>
+                <input type="file" accept="image/*;capture=camera" id="file">
+                <button class="buttonload button" id="submit" disabled>
+                    <i class="fa fa-spinner fa-spin"></i> Laden
+                </button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="cartoon-bird" src="assets/f882f320631baa72e1f928680168b7f7-cartoon-bird-animal.png" alt="">
+        </div>
+        <div>
+            <img id="img">
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
