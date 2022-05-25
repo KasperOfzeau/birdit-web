@@ -18,3 +18,19 @@ body {
     background-color: #5EC8F2;
     font-family: 'Poppins', sans-serif;
 }
+
+p {
+  font-size: 18px;
+}
+
+.button {
+  background-color: #0583F2;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
