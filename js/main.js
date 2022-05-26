@@ -2,6 +2,16 @@ const message = document.querySelector("#message");
 const uploadButton = document.querySelector("#file");
 const submitButton = document.querySelector('#submit');
 const img = document.querySelector("#img");
+let listCollection;
+if (localStorage.getItem('listCollection') === null){
+    listCollection = [];
+} else {
+    listCollection = JSON.parse(localStorage.getItem('listCollection'));
+}
+let collectionLength = 0;
+if (localStorage.getItem('listCollection') !== null){
+    collectionLength = listCollection.length;
+}
 
 uploadButton.addEventListener("change", event => loadFile(event));
 submitButton.addEventListener("click", () => userImageUploaded());
@@ -14,14 +24,35 @@ function loadFile(event) {
 }
 
 function userImageUploaded() {
-    classifier.classify(img, (err, results) => {
+    ml5.imageClassifier('MobileNet')
+    .then(classifier => classifier.classify(img))
+    .then(results => {
         console.log(results);
-        //message.innerHTML = `I think it's a ${results[0].label}!`
-        let imageResult = results[0].label;
+        let firstGuessLabel = results[0].label;
+        let firstConfidence = results[0].confidence;
+        let secondGuessLabel = results[1].label;
+        let secondConfidence = results[1].confidence;
+        let id = collectionLength + 1;
+        let data = {
+            "id": id,
+            "first_guess": {
+                "label":  firstGuessLabel,
+                "confidence": firstConfidence
+            },
+            "second_guess": {
+                "label":  secondGuessLabel,
+                "confidence": secondConfidence
+            },
+            "date": Date.now(),
+        };
 
-        // Put the image result into the localstorage for future use
-        localStorage.setItem("imageResult", imageResult);
-        window.location.href = "result.html";
+        // Add to collection in localstorage
+        listCollection.push(data);
+        // Update local storage
+        let listFavoritesString = JSON.stringify(listCollection);
+        console.log(listFavoritesString)
+        localStorage.setItem("listCollection", listFavoritesString);
+        window.location.href = "result.html?id=" + id;
     });
 }
 
