@@ -18,7 +18,7 @@ uploadButton.addEventListener("change", event => loadFile(event));
 submitButton.addEventListener("click", () => userImageUploaded());
 
 // Initialize the Image Classifier method with MobileNet
-const classifier = ml5.imageClassifier('MobileNet', modelLoaded);
+const classifier = ml5.imageClassifier('./model/model.json', modelLoaded);
 
 function loadFile(event) {
     imgName = event.target.files[0].name;
@@ -26,7 +26,7 @@ function loadFile(event) {
 }
 
 function userImageUploaded() {
-    ml5.imageClassifier('MobileNet')
+    ml5.imageClassifier('./model/model.json')
     .then(classifier => classifier.classify(img))
     .then(results => {
         console.log(results);
