@@ -28,11 +28,13 @@ function userImageUploaded() {
     .then(classifier => classifier.classify(img))
     .then(results => {
         console.log(results);
+        // Get all results
         let firstGuessLabel = results[0].label;
         let firstConfidence = results[0].confidence;
         let secondGuessLabel = results[1].label;
         let secondConfidence = results[1].confidence;
         let id = collectionLength + 1;
+        //Make an json object
         let data = {
             "id": id,
             "first_guess": {
@@ -50,7 +52,6 @@ function userImageUploaded() {
         listCollection.push(data);
         // Update local storage
         let listFavoritesString = JSON.stringify(listCollection);
-        console.log(listFavoritesString)
         localStorage.setItem("listCollection", listFavoritesString);
         window.location.href = "result.html?id=" + id;
     });
