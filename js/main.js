@@ -2,6 +2,7 @@ const message = document.querySelector("#message");
 const uploadButton = document.querySelector("#file");
 const submitButton = document.querySelector('#submit');
 const img = document.querySelector("#img");
+let imgName;
 let listCollection;
 if (localStorage.getItem('listCollection') === null){
     listCollection = [];
@@ -20,6 +21,7 @@ submitButton.addEventListener("click", () => userImageUploaded());
 const classifier = ml5.imageClassifier('MobileNet', modelLoaded);
 
 function loadFile(event) {
+    imgName = event.target.files[0].name;
     img.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -45,8 +47,11 @@ function userImageUploaded() {
                 "label":  secondGuessLabel,
                 "confidence": secondConfidence
             },
+            "imgName": imgName,
             "date": Date.now(),
         };
+
+        sendImage();
 
         // Add to collection in localstorage
         listCollection.push(data);
@@ -55,6 +60,16 @@ function userImageUploaded() {
         localStorage.setItem("listCollection", listFavoritesString);
         window.location.href = "result.html?id=" + id;
     });
+}
+
+function sendImage() {
+    const formData = new FormData();
+    formData.append('image', uploadButton.files[0]);
+    const options = {
+        method: 'POST',
+        body: formData,
+    };
+    fetch('http://localhost:3000/image', options);
 }
 
 // When the model is loaded
