@@ -30,35 +30,39 @@ function userImageUploaded() {
     .then(classifier => classifier.classify(img))
     .then(results => {
         console.log(results);
-        // Get all results
-        let firstGuessLabel = results[0].label;
-        let firstConfidence = results[0].confidence;
-        let secondGuessLabel = results[1].label;
-        let secondConfidence = results[1].confidence;
-        let id = collectionLength + 1;
-        //Make an json object
-        let data = {
-            "id": id,
-            "first_guess": {
-                "label":  firstGuessLabel,
-                "confidence": firstConfidence
-            },
-            "second_guess": {
-                "label":  secondGuessLabel,
-                "confidence": secondConfidence
-            },
-            "imgName": imgName,
-            "date": Date.now(),
-        };
+        if(Math.round((results[0].confidence + Number.EPSILON) * 100) / 100 > 0.8) {
+            // Get all results
+            let firstGuessLabel = results[0].label;
+            let firstConfidence = results[0].confidence;
+            let secondGuessLabel = results[1].label;
+            let secondConfidence = results[1].confidence;
+            let id = collectionLength + 1;
+            //Make an json object
+            let data = {
+                "id": id,
+                "first_guess": {
+                    "label":  firstGuessLabel,
+                    "confidence": firstConfidence
+                },
+                "second_guess": {
+                    "label":  secondGuessLabel,
+                    "confidence": secondConfidence
+                },
+                "imgName": imgName,
+                "date": Date.now(),
+            };
 
-        sendImage();
+            sendImage();
 
-        // Add to collection in localstorage
-        listCollection.push(data);
-        // Update local storage
-        let listFavoritesString = JSON.stringify(listCollection);
-        localStorage.setItem("listCollection", listFavoritesString);
-        window.location.href = "result.html?id=" + id;
+            // Add to collection in localstorage
+            listCollection.push(data);
+            // Update local storage
+            let listFavoritesString = JSON.stringify(listCollection);
+            localStorage.setItem("listCollection", listFavoritesString);
+            window.location.href = "result.html?id=" + id;
+        } else {
+            window.location.href = "noresult.html";
+        }
     });
 }
 
