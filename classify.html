@@ -12,6 +12,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/modal.css">
 <link rel="stylesheet" href="css/classify.css">
 </head>
 <body>
@@ -21,6 +22,7 @@
         </div>
     </nav>
     <div class="container">
+        <a href="/"><img src="/assets/right-arrow.png" id="back-btn"></a>
         <div class="card">
             <div class="card-body">
                 <h1>Foto verzenden</h1>
@@ -34,6 +36,20 @@
         <div class="image-container">
             <img class="cartoon-bird" src="assets/f882f320631baa72e1f928680168b7f7-cartoon-bird-animal.png" alt="">
         </div>
+        <!-- The Tutorial Modal -->
+        <div id="tutorialodal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Uitleg</h2>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/tutorial.jpg" width="100%">
+                    <button class="close-btn">Verder gaan</button>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
         <div>
             <img id="img">
         </div>
@@ -41,4 +57,5 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js/classify.js" defer></script>
+    <script src="js/modal.js" defer></script>
 </body>

@@ -23,6 +23,11 @@ p {
   font-size: 18px!important;
 }
 
+#back-btn {
+  width: 48px;
+  margin-left: 10px;
+}
+
 .button {
   background-color: #0583F2;
   border: none;
