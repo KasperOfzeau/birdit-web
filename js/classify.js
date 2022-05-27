@@ -52,21 +52,14 @@ function userImageUploaded() {
                 "date": Date.now(),
             };
 
-            sendImage();
-
-            // Add to collection in localstorage
-            listCollection.push(data);
-            // Update local storage
-            let listFavoritesString = JSON.stringify(listCollection);
-            localStorage.setItem("listCollection", listFavoritesString);
-            window.location.href = "result.html?id=" + id;
+            sendImage(data, id);
         } else {
             window.location.href = "noresult.html";
         }
     });
 }
 
-function sendImage() {
+function sendImage(data, id) {
     const formData = new FormData();
     formData.append('image', uploadButton.files[0]);
     const options = {
@@ -74,6 +67,19 @@ function sendImage() {
         body: formData,
     };
     fetch('http://localhost:3000/image', options);
+
+    addToLocalStorage(data, id);
+}
+
+function addToLocalStorage(data, id) {
+    // Add to collection in localstorage
+    listCollection.push(data);
+    // Update local storage
+    let listCollectionString = JSON.stringify(listCollection);
+    localStorage.setItem("listCollection", listCollectionString);
+
+    // Go to result page
+    window.location.href = "result.html?id=" + id;
 }
 
 // When the model is loaded
