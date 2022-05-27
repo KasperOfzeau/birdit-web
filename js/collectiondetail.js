@@ -2,9 +2,11 @@ let url = new URL(window.location.href); // Get url
 let search_params = url.searchParams; // Get params
 let collectionId = search_params.get('id'); // Get id from params
 
-let container = document.querySelector(".container")
+let unlockedContainer = document.querySelector(".unlocked-container");
+let lockedContainer = document.querySelector(".locked-container")
 let listCollection = JSON.parse(localStorage.getItem("listCollection"));
 let collection = [];
+let lockedCollection = [];
 let collectionscore = 0;
 
 // Get JSON of all birds collection and calculate score
@@ -20,29 +22,45 @@ function getJsonFile(url) {
 // Calculate score of collection
 function calculateScore(JSON) {
     for (const [key, value] of Object.entries(JSON)) {
+        lockedCollection.push(value);
         for (const collectionBird of listCollection) { 
             let bird = collectionBird.first_guess.label;
             if(bird == value){ 
                 if(collection.includes(bird) == false){
                     collection.push(collectionBird.first_guess.label);
-                    collectionscore += 10;
-                    console.log(bird);
+                    // Remove from locked collection
+                    const index = lockedCollection.indexOf(bird);
+                    if (index > -1) {
+                        lockedCollection.splice(index, 1);
+                    }
 
-                    let id = collectionBird.id;
+                    // Add score
+                    collectionscore += 10;
+
+                    // Create card
+                    let id = bird;
                     let title = bird;
                     let img = collectionBird.imgName;
-                    createCard(id, img, title);
+                    createCard("unlocked", unlockedContainer,id, img, title);
                     // updateBar(score)
                 }
-            }
+            } 
         }
+    }
+    console.log(lockedCollection)
+    for (const bird of lockedCollection) { 
+        let id = bird;
+        let title = bird;
+        let img = bird + ".jpg";
+        createCard("locked", lockedContainer, id, img, title);
     }
 }
 
-function createCard(id, img, title) {
+function createCard(divClass, collectionContainer, id, img, title) {
     // Create new card
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("card");
+    cardDiv.classList.add(divClass);
     cardDiv.setAttribute('id', id);
 
     // Create image for card
@@ -66,7 +84,7 @@ function createCard(id, img, title) {
     readMore.setAttribute('href', "birddetail.html?collection=" + collectionId + "&id=" + id);
 
     // ADD ALL IN TO HTML
-    container.appendChild(cardDiv);
+    collectionContainer.appendChild(cardDiv);
     cardDiv.appendChild(cardImg);
     cardDiv.appendChild(body);
     body.appendChild(cardTitle);
