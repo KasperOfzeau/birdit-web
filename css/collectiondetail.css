@@ -9,7 +9,7 @@ nav {
     justify-content: center;
 }
 
-.locked-container {
+.locked-container, .unlocked-container {
     margin-top: 20px;
 }
 
