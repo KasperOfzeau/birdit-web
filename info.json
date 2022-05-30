@@ -10,13 +10,55 @@
         "help": "U kunt uw tuin vogelvriendelijk inrichten. Een boom, wat struiken en een nestkastje en uw tuin wordt bijna gegarandeerd bezocht door één of meer koolmezen. Zorg ervoor dat katten niet bij de nestkasten kunnen komen. In de winter kunt u koolmezen en andere vogels helpen door bij te voederen met vetbollen, pinda's en voedertafels. Een nestkastje met een binnenmaat van ongeveer 12x12x25 centimeter en een invliegopening van zo'n 32-35 mm (een 2-euro munt) zal prima voldoen voor een paartje koolmezen. Plaats nestkasten bij voorkeur met de invliegopening op het noordoosten gericht"
     },
     {
-        "bird": "",
-        "description": "",
+        "bird": "Houtduif",
+        "description": "e houtduif is de grootste en ook de meest voorkomende duif van Nederland. Hij komt in steden voor in tuinen en parken maar ook in het buitengebied op akkers. Meestal zijn ze op de grond naar voedsel aan het zoeken of zitten ze in een boom luid te koeren. Bij het opvliegen maken ze nogal wat kabaal doordat de vleugels boven en onder het lichaam tegen elkaar klappen.",
         "facts": [
-            "",
-            "",
-            ""
+            "De houtduif is de grootste duivensoort van West-Europa.",
+            "Houtduiven hebben hun ogen aan de zijkant van de kop. Hierdoor kunnen ze in een oogopslag 360 graden zien! Mensen kunnen maar 180 graden zien. Wij moe- ten een rondje draaien om net zoveel te zien.",
+            "Bij het opvliegen klappen ze met hun vleugels onder en boven hun lijf tegen elkaar aan; dat is duidelijk te horen."
         ],
-        "help": ""
+        "help": "Houtduiven eten onder meer zaad op de grond. Als u houtduiven in de winter een handje wilt helpen, moet u het dus ook daar strooien willen de vogels ervan kunnen profiteren. Het beste werkt om niet te voorzichtig het wintervoer op de voedertafel te strooien, zodat u flink morst. Andere vogelsoorten die daar ook van profiteren, zijn roodborst, heggenmus en verschillende lijstersoorten.Wat houtduiven nodig hebben in een tuin is een hoge boom om een nest in te kunnen maken. Houtduiven zijn geen holenbroeders en broeden niet in nestkasten, hoewel ze incidenteel in een torenvalken- of bosuilenkast aangetroffen kunnen worden."
+    },
+    {
+        "bird": "Huismus",
+        "description": "Algemene en zeer bekende broedvogel in dorpen en steden. Stevig gebouwd, met grote snavel en verhoudingsgewijs grote kop. Mannetjes en vrouwtjes verschillen sterk, waarbij de mannetjes veel donkerder gekleurd zijn.",
+        "facts": [
+            "Hoe dominanter het mannetje, des te groteris zijn zwarte keelvlek.",
+            "De huismus is de meest getelde vogel tijdens de Nationale Tuinvogeltelling."
+        ],
+        "help": "Huismussen hebben tuinen nodig met veel groen en hagen (liguster, klimop), voor hun veiligheid en voor voedsel. Waterrijke plekken met riet zijn ook belangrijk in de broedtijd (insecten!)."
+    },
+    {
+        "bird": "Kauw",
+        "description": "Kauwen zijn zwarte gedrongen vogels met zilvergrijze kopzijden. Deze intelligente soort leeft in groepen. Binnen groepen kauwen bestaat een uitgebreide sociale structuur met een pikorde, intriges en altijd zijn er 'verliefde' stelletjes te onderscheiden als ze aan het foerageren zijn. De paarband tussen kauwen duurt een leven lang en de vogels zijn bijna altijd onafscheidelijk.",
+        "facts": [
+            "Een kauwenpaartje blijft het hele leven bij elkaar. Kauwen kunnen wel 16 jaar oud worden.",
+            "Het zijn groepsdieren. Ze houden ervan om samen naar eten te zoeken en te slapen in groepen",
+            "Ze delen eten als teken van vriendschap.",
+            "Kauwen zijn familie van kraaien, eksters en raven. Ze zijn de kleinste van deze familie.",
+            "Ze kunnen twee keer zo goed zien als een mens."
+        ],
+        "help": "Kraaiachtigen zijn niet altijd populair. Plaatselijk kunnen grote groepen ontstaan. Onderzoek aan de vogelstand toont aan dat kraaiachtigen geen achteruitgang van zangvogels in tuinen veroorzaken. De kraaiachtigen laten zich wel steeds vaker zien in de stad. Wilt u dat zij niet mee-eten van de voedertafel, gebruik dan een voedersilo of beschermkooi zoals die in de webshop van Vogelbescherming zijn te krijgen."
+    },
+    {
+        "bird": "Ekster",
+        "description": "Eksters zijn intelligente vogels met een fascinerende leefwijze. Tot hun derde levensjaar leven eksters in 'jeugdbendes'. Daarin doen ze de ervaring op die een ekster nodig heeft om jongen groot te kunnen brengen. Eksters staan er in de volksmond om bekend glimmende voorwerpen als sieraden en zilveren theelepeltjes te 'stelen' en naar het nest te brengen. Dit gedrag komt voort uit de onverzadigbare nieuwsgierigheid van eksters; alles dat er 'anders' uitziet, wordt onderzocht en eventueel begraven onder enkele bladeren voor later gebruik.",
+        "facts": [
+            "Eksters zijn heel nieuwsgierig!",
+            "Andere vogels zoals torenvalken en ransuilen gebruiken oude eksternesten om zelf in te nestelen. Dat scheelt zelf klussen.",
+            "Eksters zijn familie van zangvogels zoals koolmezen en vinken. Dat zou je niet zeggen als je hun gekras hoort. Maar heel soms kun je ze zachtjes horen zingen.",
+            "Ze kunnen hun eigen spiegelbeeld herkennen.",
+            "Eksters communiceren met hun staart. De baas van de groep herken je doordat hij zijn staart het hoogste houdt."
+        ],
+        "help": "Eksters zijn opportunistisch en profiteren ook van het bijvoeren van vogels in de tuin. Broeden doen ze graag in hogere bomen."
+    },
+    {
+        "bird": "Merel",
+        "description": "De merel is de meest algemene en een van de bekendste vogels van ons land. Het is zelfs de talrijkste broedvogel van Nederland. Recentelijk heeft de soort echter te lijden gehad onder het usutuvirus. Merels zijn luidruchtig. Als er een kat in de buurt is, waarschuwen ze langdurig met hun luide alarmroep andere dieren. De nesten zijn vaak makkelijk te vinden waardoor veel eieren en jongen aan katten en kraaien ten prooi vallen. Ondanks die verliezen zijn de merels nog steeds zeer talrijk: ze compenseren dit natuurlijke verlies door veel jongen groot te brengen. De merelman brengt in het voorjaar een fraai lied ten gehore vanaf een hoge plek",
+        "facts": [
+            "De eieren van de merel zijn groenblauw van kleur. Merels houden van zonnen. Ze zitten vaak op de grond met hun vleugels wijd.",
+            "Merels kiezen de gekste plekken uit om een nest te bouwen. Er is zelfs een keer een merelnest op een bezem gevonden."
+        ],
+        "help": "Grasveldjes aanleggen in combinatie met besdragende struiken, fruitbomen en sierbeplanting om voedsel te zoeken. Struiken, hagen, klimop of lage bomen aanplanten om in te broeden of dekking te zoeken. Schakel een Tuinvogelconsulent van Vogelbescherming Nederland in voor advies op maat voor uw tuin. In de herfst kunt u de blaadjes onder de struiken en in de borders harken. Daar schuilen insecten onder en het is goed voor wormen; zo helpt u de merel, die daar weer op afkomt."
     }
 ]
