@@ -66,7 +66,7 @@ function sendImage(data, id) {
         method: 'POST',
         body: formData,
     };
-    fetch('http://localhost:3000/image', options);
+    fetch('http://kasperofzeau.nl:3000/image', options);
 
     addToLocalStorage(data, id);
 }

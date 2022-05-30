@@ -4,7 +4,11 @@ let collectionId = search_params.get('id'); // Get id from params
 
 let unlockedContainer = document.querySelector(".unlocked-container");
 let lockedContainer = document.querySelector(".locked-container")
-let listCollection = JSON.parse(localStorage.getItem("listCollection"));
+if (localStorage.getItem('listCollection') === null){
+    listCollection = [];
+} else {
+    listCollection = JSON.parse(localStorage.getItem('listCollection'));
+}
 let collection = [];
 let lockedCollection = [];
 let collectionscore = 0;
@@ -21,6 +25,7 @@ function getJsonFile(url) {
 
 // Calculate score of collection
 function calculateScore(JSON) {
+    console.log(listCollection)
     for (const [key, value] of Object.entries(JSON)) {
         lockedCollection.push(value);
         for (const collectionBird of listCollection) { 
@@ -67,7 +72,7 @@ function createCard(divClass, collectionContainer, id, img, title) {
     // Create image for card
     const cardImg = document.createElement("img");
     cardImg.classList.add("card-bg-img");
-    cardImg.src = "http://localhost:3000/uploads/" + img;
+    cardImg.src = "http://kasperofzeau.nl:3000/uploads/" + img;
 
     // Create div body
     const body = document.createElement("div");

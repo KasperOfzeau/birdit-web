@@ -21,7 +21,7 @@ for (const [key, value] of Object.entries(listCollection)) {
         title.innerHTML = bird;
         vogel.innerHTML = bird;
         message.innerHTML = `Je hebt een ${bird} op de foto gezet! Goed gedaan!`;
-        image.src = "http://localhost:3000/uploads/" + value.imgName;
+        image.src = "http://kasperofzeau.nl:3000/uploads/" + value.imgName;
         getJsonFile();
     }
 }
