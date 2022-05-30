@@ -21,12 +21,12 @@
     },
     {
         "bird": "Huismus",
-        "description": "Algemene en zeer bekende broedvogel in dorpen en steden. Stevig gebouwd, met grote snavel en verhoudingsgewijs grote kop. Mannetjes en vrouwtjes verschillen sterk, waarbij de mannetjes veel donkerder gekleurd zijn.",
+        "description": "Algemene en zeer bekende broedvogel. Hij woont in dorpen en steden. Ziet er een beetje dik uit en heeft een grote snavel. Mannetjes en vrouwtjes verschillen sterk, mannetjes hebben vaak een donkere kleur.",
         "facts": [
-            "Hoe dominanter het mannetje, des te groteris zijn zwarte keelvlek.",
+            "Als het mannetje erg belangrijk is, heeft hij een grote zwarte vlek bij zijn keel.",
             "De huismus is de meest getelde vogel tijdens de Nationale Tuinvogeltelling."
         ],
-        "help": "Huismussen hebben tuinen nodig met veel groen en hagen (liguster, klimop), voor hun veiligheid en voor voedsel. Waterrijke plekken met riet zijn ook belangrijk in de broedtijd (insecten!)."
+        "help": "Huismussen hebben tuinen nodig met veel groen en bosjes, voor hun veiligheid en voor voedsel. Waterrijke plekken met riet zijn ook belangrijk in de broedtijd (insecten!)."
     },
     {
         "bird": "Kauw",
