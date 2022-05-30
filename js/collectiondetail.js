@@ -27,6 +27,7 @@ function calculateScore(JSON) {
             let bird = collectionBird.first_guess.label;
             if(bird == value){ 
                 if(collection.includes(bird) == false){
+                    console.log(collectionBird.id)
                     collection.push(collectionBird.first_guess.label);
                     // Remove from locked collection
                     const index = lockedCollection.indexOf(bird);
@@ -38,7 +39,7 @@ function calculateScore(JSON) {
                     collectionscore += 10;
 
                     // Create card
-                    let id = bird;
+                    let id = collectionBird.id;
                     let title = bird;
                     let img = collectionBird.imgName;
                     createCard("unlocked", unlockedContainer,id, img, title);

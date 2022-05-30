@@ -19,6 +19,7 @@ let listCollection = JSON.parse(localStorage.getItem("listCollection"));
 for (const [key, value] of Object.entries(listCollection)) {
     // When the id is the same
     if(value.id == id){
+        console.log(value)
         bird = value.first_guess.label;
         title.innerHTML = bird;
         vogel.innerHTML = bird;
