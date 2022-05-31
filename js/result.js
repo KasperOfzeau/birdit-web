@@ -44,4 +44,11 @@ function getBirdInfo(infoJSON) {
             help.innerHTML = value.help;
         }
     }
+
 }
+
+let x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
