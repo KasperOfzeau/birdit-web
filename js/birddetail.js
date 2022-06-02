@@ -7,8 +7,9 @@ const title = document.querySelector('#title');
 const message = document.querySelector("#message");
 const description = document.querySelector("#description");
 const facts = document.querySelector('#facts');
+
 const vogel = document.querySelector('.vogel');
-const help = document.querySelector('#help');
+const helps = document.querySelector('#helps');
 const image = document.getElementById('image');
 const backButton = document.getElementById('goback').setAttribute('href', "collectiondetail.html?id=" + collection);
 let bird;
@@ -45,7 +46,13 @@ function getBirdInfo(infoJSON) {
                 li.innerHTML = fact;
                 facts.appendChild(li);
             }
+            for (const help of value.helps) { 
+                let li = document.createElement("li");
+                li.innerHTML = help;
+                helps.appendChild(li);
+            }
             help.innerHTML = value.help;
         }
     }
+
 }

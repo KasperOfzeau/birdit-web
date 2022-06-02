@@ -7,7 +7,7 @@ const message = document.querySelector("#message");
 const description = document.querySelector("#description");
 const facts = document.querySelector('#facts');
 const vogel = document.querySelector('.vogel');
-const help = document.querySelector('#help');
+const helps = document.querySelector('#helps');
 const image = document.getElementById('image');
 let bird;
 // Get all saved predictions
@@ -40,6 +40,11 @@ function getBirdInfo(infoJSON) {
                 let li = document.createElement("li");
                 li.innerHTML = fact;
                 facts.appendChild(li);
+            }
+            for (const help of value.helps) { 
+                let li = document.createElement("li");
+                li.innerHTML = help;
+                helps.appendChild(li);
             }
             help.innerHTML = value.help;
         }
