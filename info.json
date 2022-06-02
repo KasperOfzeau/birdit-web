@@ -1,64 +1,188 @@
 [
     {
         "bird": "Koolmees",
-        "description": "Een van de meest voorkomende broedvogels van Nederland. De koolmees kan verschillende toontjes fluiten. Hij is te herkennen aan zijn gele kleur en zijn zwarte kop. Hij woont vaak in bossen, maar komt leeft ook in dorpen en steden. Hij legt graag eitjes in een nest kastje, En vind het in de winter extra fijn om voeding te krijgen. Hij kan niet goed tegen de kou.",
+        "description": "De koolmees heeft een gele buik. Zwarte kop, en een witte wang.",
         "facts": [
-            "Koolmezen in de stad zingen hogere tonen dan koolmezen in het bos. Anders komen ze niet boven het geluid van de stad uit.",
+            "Koolmezen die in de stad wonen. Zingen harder dan koolmezen die in het bos wonen.",
             "Het vrouwtje legt wel 8 tot 10 eieren en begint pas met broeden als alle eieren gelegd zijn.",
-            "In de winter komen er koolmezen uit Oost-Europa bij ons overwinteren. Deze Oost-Europese koolmezen gaan vroeg in het voorjaar weer terug. Onze Nederlandse koolmezen wonen hier het hele jaar."
+            "Ze leven niet op plekken waar geen struiken of bosjes zijn.",
+            "Koolmezen kunnen slecht tegen de kou."
         ],
-        "help": "Jij kunt jouw tuin vogelvriendelijk maken!. De koolmees kun je helpen met een boom, wat struiken en een nestkastje. Zorg ervoor dat katten niet bij de nestkasten kunnen komen. In de winter kun je de koolmezen helpen door ze te voeren met vetbollen, pinda's en voedertafels. Een nestkastje met een binnenmaat van ongeveer 12x12x25 centimeter en gaatje van zo'n 32-35 mm (een 2-euro munt)."
+        "helps": [ 
+            "Je kunt een boom, wat struiken en een nestkastje in de tuin plaatsen.",
+            "Zorg ervoor dat katten niet bij de nestkasten kunnen komen.",
+            "In de winter kun je koolmezen helpen door ze eten te geven.",
+            "Je kunt een nestkastje in de tuin plaatsen."
+        ],
+        "voeding": [
+            "Kleine insecten",
+            "Zaden",
+            "Pinda;s",
+            "Zonnebloempitten",
+            "Beukennootjes"
+        ],
+        "leefgebied": [
+            "In het bos",
+            "In kleine bosjes",
+            "Kleine struiken",
+            "Parken",
+            "Tuinen"
+        ]
+
     },
     {
-        "bird": "Houtduif",
-        "description": "De houtduif is de grootste en bekendste duif van Nederland. Hij komt in steden voor in tuinen en parken maar ook op het platte land. Vaak zijn ze op de grond naar voedsel aan het zoeken of zitten ze in een boom luid te roepen. Bij het opvliegen maken ze nogal wat kabaal.",
+        "bird": "",
+        "description": "",
         "facts": [
-            "De houtduif is de grootste duivensoort van West-Europa.",
-            "Houtduiven hebben hun ogen aan de zijkant van de kop. Hierdoor kunnen ze in een oogopslag 360 graden zien! Mensen kunnen maar 180 graden zien. Wij moeten een rondje draaien om net zoveel te zien.",
-            "Bij het opvliegen klappen ze met hun vleugels onder en boven hun lijf tegen elkaar aan; dat is duidelijk te horen."
+            "",
+            "",
+            "",
+            ""
         ],
-        "help": "Houtduiven eten onder meer zaad op de grond. Als jij houtduiven in de winter wilt helpen, moet je het voedsel op de grond strooien. Wat houtduiven nodig hebben in een tuin is een hoge boom om een nest in te kunnen maken. Houtduiven broeden niet in nestkasten."
+        "helps": [ 
+            ".",
+            ".",
+            "."
+        ],
+        "voeding": [ 
+            ".",
+            ".",
+            "."
+        ],
+        "leefgebied": [ 
+            ".",
+            ".",
+            "."
+        ]
+    },
+    {   
+        "bird": "Houtduif",
+        "description": "Grijs met een witte stip op de vleugel",
+        "facts": [
+            "De houtduif is de grootste duif van nederland",
+            "Ze maken veel geluid tijdens het vliegen",
+            "In de herfst gaan ze het bos in om eikels te eten",
+            "Jonge duiven krijgen duivenmelk van hun moeder"
+        ],
+        "helps": [ 
+            "Je kunt ze helpen door bomen in de tuin te plaatsen.",
+            "Voeren kun je het best op de grond doen."
+        ],
+        "voeding": [ 
+            "Zaden.",
+            "Bladeren.",
+            "Etensresten."
+        ],
+        "leefgebied": [ 
+            "Plekken met hoge bomen.",
+            "Tuinen.",
+            "Bossen.",
+            "Parken."
+        ]
+
     },
     {
         "bird": "Huismus",
-        "description": "Algemene en zeer bekende broedvogel. Hij woont in dorpen en steden. Ziet er een beetje dik uit en heeft een grote snavel. Mannetjes en vrouwtjes verschillen sterk, mannetjes hebben vaak een donkere kleur.",
+        "description": "Het mannetje heeft een grijs petje met roodbruine zijkanten, grijze wangen, grijze buik en witte strepen op de vleugels. Het vrouwtje is lichtbruin.",
         "facts": [
-            "Als het mannetje erg belangrijk is, heeft hij een grote zwarte vlek bij zijn keel.",
-            "De huismus is de meest getelde vogel tijdens de Nationale Tuinvogeltelling."
+            "Hoe belangrijker het mannetje, hoe zwarter zijn buik.",
+            "Er zijn veel minder huismussen in de stad doordat zij hier minder nesten kunnen maken."
         ],
-        "help": "Huismussen hebben tuinen nodig met veel groen en bosjes, voor hun veiligheid en voor voedsel. Waterrijke plekken met riet zijn ook belangrijk in de broedtijd (insecten!)."
+        "helps": [ 
+            "Je kunt de huismus helpen door struiken neer te zetten.",
+            "Een vogelhuisje in de tuin plaatsen waar de huismus een nest kan bouwen.",
+            "Een waterbak in de tuin plaatsen."
+        ],
+        "voeding": [ 
+            "Zaden.",
+            "Insecten.",
+            "Bloemknoppen.",
+            "Brood.",
+            "Bessen."
+        ],
+        "leefgebied": [ 
+            "Plekken met veel struiken.",
+            "Plekken met weinig hoge bomen."
+        ]
     },
     {
         "bird": "Kauw",
-        "description": "Kauwen zijn zwarte gedrongen vogels met zilvergrijze kopzijden. Deze intelligente soort leeft in groepen. Binnen groepen kauwen bestaat een uitgebreide sociale structuur met een pikorde, intriges en altijd zijn er 'verliefde' stelletjes te onderscheiden als ze aan het foerageren zijn. De paarband tussen kauwen duurt een leven lang en de vogels zijn bijna altijd onafscheidelijk.",
+        "description": "Zwart met een zilvergrijze kop",
         "facts": [
-            "Een kauwenpaartje blijft het hele leven bij elkaar. Kauwen kunnen wel 16 jaar oud worden.",
+            "Een kauwenpaartje blijft het hele leven bij elkaar.",
+            "Kauwen kunnen wel 16 jaar oud worden.",
             "Het zijn groepsdieren. Ze houden ervan om samen naar eten te zoeken en te slapen in groepen",
             "Ze delen eten als teken van vriendschap.",
-            "Kauwen zijn familie van kraaien, eksters en raven. Ze zijn de kleinste van deze familie.",
             "Ze kunnen twee keer zo goed zien als een mens."
         ],
-        "help": "Kraaiachtigen zijn niet altijd populair. Plaatselijk kunnen grote groepen ontstaan. Onderzoek aan de vogelstand toont aan dat kraaiachtigen geen achteruitgang van zangvogels in tuinen veroorzaken. De kraaiachtigen laten zich wel steeds vaker zien in de stad. Wilt u dat zij niet mee-eten van de voedertafel, gebruik dan een voedersilo of beschermkooi zoals die in de webshop van Vogelbescherming zijn te krijgen."
+        "helps": [
+        "Kraaiachtigen zijn niet altijd populair.De kraaiachtigen laten zich wel steeds vaker zien in de stad. Wilt u dat zij niet mee-eten van de voedertafel, gebruik dan een voedersilo of beschermkooi zoals die in de webshop van Vogelbescherming zijn te krijgen."
+        ],
+        "voeding": [ 
+            "Insecten.",
+            "Zaden.",
+            "Bessen.",
+            "Etensresten."
+        ],
+        "leefgebied": [ 
+            "Het platteland.",
+            "In de stad."
+        ]
     },
+
+
     {
         "bird": "Ekster",
-        "description": "Eksters zijn intelligente vogels met een fascinerende leefwijze. Tot hun derde levensjaar leven eksters in 'jeugdbendes'. Daarin doen ze de ervaring op die een ekster nodig heeft om jongen groot te kunnen brengen. Eksters staan er in de volksmond om bekend glimmende voorwerpen als sieraden en zilveren theelepeltjes te 'stelen' en naar het nest te brengen. Dit gedrag komt voort uit de onverzadigbare nieuwsgierigheid van eksters; alles dat er 'anders' uitziet, wordt onderzocht en eventueel begraven onder enkele bladeren voor later gebruik.",
+        "description": "Zwart en wit gekleurd, lange staart",
         "facts": [
             "Eksters zijn heel nieuwsgierig!",
-            "Andere vogels zoals torenvalken en ransuilen gebruiken oude eksternesten om zelf in te nestelen. Dat scheelt zelf klussen.",
-            "Eksters zijn familie van zangvogels zoals koolmezen en vinken. Dat zou je niet zeggen als je hun gekras hoort. Maar heel soms kun je ze zachtjes horen zingen.",
             "Ze kunnen hun eigen spiegelbeeld herkennen.",
-            "Eksters communiceren met hun staart. De baas van de groep herken je doordat hij zijn staart het hoogste houdt."
+            "Eksters praten met hun staart. De baas van de groep herken je doordat hij zijn staart het hoogste houdt.",
+            "Eksters zijn hele slimme vogel",
+            "Tot hun derde levensjaar leven eksters in 'jeugdbendes'." 
         ],
-        "help": "Eksters zijn opportunistisch en profiteren ook van het bijvoeren van vogels in de tuin. Broeden doen ze graag in hogere bomen."
+        "helps": [ 
+            "Je kunt ze helpen door ze bij te voeren.",
+            "Je kunt ze helpen door hoge bomen neer te zetten."
+        ],
+        "voeding": [ 
+            "Insecten.",
+            "Kleine dieren zoals muizen.",
+            "Etensresten zoals brood."
+        ],
+        "leefgebied": [ 
+            "Tuinen.",
+            "Stadsparken.",
+            "Plekken waar mensen hun afval weggooien.",
+            "Plekken met hoge bomen."
+        ]
+    
+
     },
+
     {
         "bird": "Merel",
-        "description": "De merel is de meest algemene en een van de bekendste vogels van ons land. Het is zelfs de talrijkste broedvogel van Nederland. Recentelijk heeft de soort echter te lijden gehad onder het usutuvirus. Merels zijn luidruchtig. Als er een kat in de buurt is, waarschuwen ze langdurig met hun luide alarmroep andere dieren. De nesten zijn vaak makkelijk te vinden waardoor veel eieren en jongen aan katten en kraaien ten prooi vallen. Ondanks die verliezen zijn de merels nog steeds zeer talrijk: ze compenseren dit natuurlijke verlies door veel jongen groot te brengen. De merelman brengt in het voorjaar een fraai lied ten gehore vanaf een hoge plek",
+        "description": "Mannetje geheel zwart en vrouwtje donkerbruin van kleur, Snavel is geel of oranjeachtig van kleur",
         "facts": [
-            "De eieren van de merel zijn groenblauw van kleur. Merels houden van zonnen. Ze zitten vaak op de grond met hun vleugels wijd.",
-            "Merels kiezen de gekste plekken uit om een nest te bouwen. Er is zelfs een keer een merelnest op een bezem gevonden."
+            "De eieren van de merel zijn groenblauw van kleur.",
+            "Merels houden van zonnen.",
+            "Merels bouwen nesten op de gekste plekken.  Er is zelfs een keer een merelnest op een bezem gevonden.",
+            "Als er een kat in de buurt is, waarschuwen ze langdurig met hun luide alarmroep andere dieren"
         ],
-        "help": "Grasveldjes aanleggen in combinatie met besdragende struiken, fruitbomen en sierbeplanting om voedsel te zoeken. Struiken, hagen, klimop of lage bomen aanplanten om in te broeden of dekking te zoeken. Schakel een Tuinvogelconsulent van Vogelbescherming Nederland in voor advies op maat voor uw tuin. In de herfst kunt u de blaadjes onder de struiken en in de borders harken. Daar schuilen insecten onder en het is goed voor wormen; zo helpt u de merel, die daar weer op afkomt."
-    }
+        "helps": [ 
+            "Leg een grasveld aan.",
+            "Zet struiken in de tuin zodat hij zich kan verstoppen of een nest kan bouwen."
+        ],
+        "voeding": [ 
+            "Wormen.",
+            "Insecten.",
+            "Bessen.",
+            "Fruit"
+        ],
+        "leefgebied": [ 
+            "Plekken met grasvelden.",
+            "Plekken met veel bomen en struiken"
+        ]
+    }    
+
 ]
