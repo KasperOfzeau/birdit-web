@@ -15,7 +15,7 @@ let listCollection = JSON.parse(localStorage.getItem("listCollection"));
 
 // Find the right one
 for (const [key, value] of Object.entries(listCollection)) {
-    // When the id is the same
+    // When the id is the samex
     if(value.id == id){
         bird = value.first_guess.label;
         title.innerHTML = bird;
@@ -45,6 +45,16 @@ function getBirdInfo(infoJSON) {
                 let li = document.createElement("li");
                 li.innerHTML = help;
                 helps.appendChild(li);
+            }
+            for (const voed of value.voeding) { 
+                let li = document.createElement("li");
+                li.innerHTML = voed;
+                voeding.appendChild(li);
+            }
+            for (const leef of value.leefgebied) { 
+                let li = document.createElement("li");
+                li.innerHTML = leef;
+                leefgebied.appendChild(li);
             }
             help.innerHTML = value.help;
         }

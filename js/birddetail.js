@@ -13,6 +13,7 @@ const helps = document.querySelector('#helps');
 const image = document.getElementById('image');
 const backButton = document.getElementById('goback').setAttribute('href', "collectiondetail.html?id=" + collection);
 let bird;
+
 // Get all saved predictions
 let listCollection = JSON.parse(localStorage.getItem("listCollection"));
 
@@ -50,6 +51,16 @@ function getBirdInfo(infoJSON) {
                 let li = document.createElement("li");
                 li.innerHTML = help;
                 helps.appendChild(li);
+            }
+            for (const voed of value.voeding) { 
+                let li = document.createElement("li");
+                li.innerHTML = voed;
+                voeding.appendChild(li);
+            }
+            for (const leef of value.leefgebied) { 
+                let li = document.createElement("li");
+                li.innerHTML = leef;
+                leefgebied.appendChild(li);
             }
             help.innerHTML = value.help;
         }
