@@ -11,6 +11,10 @@
     margin: 20px auto;
 }
 
+ul {
+    margin-left: 15px;
+}
+
 .button {
     width: 100%;
 }
