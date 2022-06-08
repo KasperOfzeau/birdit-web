@@ -27,6 +27,7 @@ function loadFile(event) {
 }
 
 function userImageUploaded() {
+    submitButton.innerHTML = "<i class='fa fa-spinner fa-spin'></i> Laden"
     ml5.imageClassifier('./model/model.json')
     .then(classifier => classifier.classify(img))
     .then(results => {
