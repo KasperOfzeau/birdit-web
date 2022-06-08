@@ -23,6 +23,7 @@ const classifier = ml5.imageClassifier('./model/model.json', modelLoaded);
 function loadFile(event) {
     imgName = event.target.files[0].name;
     img.src = URL.createObjectURL(event.target.files[0]);
+    uploadButton.classList.add('uploaded');
 }
 
 function userImageUploaded() {

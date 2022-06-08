@@ -27,14 +27,15 @@
             <div class="card-body">
                 <h1>Foto verzenden</h1>
                 <p>Verzend hier de foto van je vogel! En kom er achter welke vogel je op de foto hebt gezet! Daarnaast kom je vanalles te weten over de vogel!</p>
-                <input type="file" accept="image/*;capture=camera" id="file">
+                <input type="file" accept="image/*;capture=camera" id="file" class="inputfile">
+                <label for="file">Klik hier om foto te kiezen</label>
+                <div>
+                    <img id="img">
+                </div>
                 <button class="buttonload button" id="submit" disabled>
                     <i class="fa fa-spinner fa-spin"></i> Laden
                 </button>
             </div>
-        </div>
-        <div class="image-container">
-            <img class="cartoon-bird" src="assets/f882f320631baa72e1f928680168b7f7-cartoon-bird-animal.png" alt="">
         </div>
         <!-- The Tutorial Modal -->
         <div id="tutorialodal" class="modal">
@@ -49,9 +50,6 @@
                 </div>
                 <!-- <div class="modal-footer"></div> -->
             </div>
-        </div>
-        <div>
-            <img id="img">
         </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
