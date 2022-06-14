@@ -27,6 +27,9 @@
             "Kleine struiken",
             "Parken",
             "Tuinen"
+        ],
+        "vogelzang": [
+            "./assets/audio/vogelzang/koolmeess.mp3"
         ]
 
     },
@@ -78,6 +81,9 @@
             "Tuinen.",
             "Bossen.",
             "Parken."
+        ],
+        "vogelzang": [
+            "./assets/audio/vogelzang/houtduif.mp3"
         ]
 
     },
@@ -103,6 +109,9 @@
         "leefgebied": [ 
             "Plekken met veel struiken.",
             "Plekken met weinig hoge bomen."
+        ],
+        "vogelzang": [
+            "./assets/audio/vogelzang/huismuss.mp3"
         ]
     },
     {
@@ -127,7 +136,11 @@
         "leefgebied": [ 
             "Het platteland.",
             "In de stad."
+        ],
+        "vogelzang": [
+            "./assets/audio/vogelzang/kauw.mp3"
         ]
+        
     },
 
 
@@ -155,7 +168,11 @@
             "Stadsparken.",
             "Plekken waar mensen hun afval weggooien.",
             "Plekken met hoge bomen."
+        ],
+        "vogelzang": [
+            "./assets/audio/vogelzang/ekster.mp3"
         ]
+        
     
 
     },
@@ -182,6 +199,10 @@
         "leefgebied": [ 
             "Plekken met grasvelden.",
             "Plekken met veel bomen en struiken"
+        ]
+        ,
+        "vogelzang": [
+            "./assets/audio/vogelzang/merell.mp3"
         ]
     }    
 
