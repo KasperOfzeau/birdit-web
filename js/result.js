@@ -72,7 +72,7 @@ function ReadMore() {
     const btnText = document.getElementById("myBtn");
   
     if (dots.style.display === "none") {
-      dots.style.display = "none";
+      dots.style.display = "inline";
       btnText.innerHTML = "Read more"; 
       moreText.style.display = "none";
     } else {
