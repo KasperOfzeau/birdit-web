@@ -1,7 +1,12 @@
 /* RESET CSS */
 html {
     box-sizing: border-box;
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+    
   }
+
+  
   
   *, *::before, *::after {
     box-sizing: inherit;
@@ -17,6 +22,7 @@ html {
 body {
     background-color: #5EC8F2!important;
     font-family: 'Poppins', sans-serif!important;
+      overflow: scroll; /* Show scrollbars */
 }
 
 p {
