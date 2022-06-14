@@ -9,6 +9,7 @@ const facts = document.querySelector('#facts');
 const vogel = document.querySelector('.vogel');
 const helps = document.querySelector('#helps');
 const image = document.getElementById('image');
+const vogelzang = document.getElementById('vogelzang');
 let bird;
 // Get all saved predictions
 let listCollection = JSON.parse(localStorage.getItem("listCollection"));
@@ -23,6 +24,7 @@ for (const [key, value] of Object.entries(listCollection)) {
         message.innerHTML = `Je hebt een ${bird} op de foto gezet! Goed gedaan!`;
         image.src = "http://kasperofzeau.nl:3000/uploads/" + value.imgName;
         getJsonFile();
+
     }
 }
 
@@ -41,6 +43,8 @@ function getBirdInfo(infoJSON) {
                 li.innerHTML = fact;
                 facts.appendChild(li);
             }
+            vogelzang.src = value.vogelzang;
+            
             for (const help of value.helps) { 
                 let li = document.createElement("li");
                 li.innerHTML = help;
@@ -61,7 +65,22 @@ function getBirdInfo(infoJSON) {
     }
 
 }
-
+function ReadMore() {
+    
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
+    const btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
 let x = document.getElementById("myAudio"); 
 
 function playAudio() { 
