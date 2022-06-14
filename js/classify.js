@@ -2,6 +2,7 @@ const message = document.querySelector("#message");
 const uploadButton = document.querySelector("#file");
 const submitButton = document.querySelector('#submit');
 const img = document.querySelector("#img");
+const audiofile = document.querySelector("#audio")
 let imgName;
 let listCollection;
 if (localStorage.getItem('listCollection') === null){
