@@ -142,6 +142,33 @@
         ]
         
     },
+    {
+        "bird": "Kraai",
+        "description": "Zwart met een zilvergrijze kop",
+        "facts": [
+            "Het zijn groepsdieren. Ze houden ervan om samen naar eten te zoeken en te slapen in groepen",
+            "Ze delen eten als teken van vriendschap.",
+            "Ze kunnen twee keer zo goed zien als een mens."
+        ],
+        "helps": [
+        "Kraaiachtigen zijn niet altijd populair.De kraaiachtigen laten zich wel steeds vaker zien in de stad. Wilt u dat zij niet mee-eten van de voedertafel, gebruik dan een voedersilo of beschermkooi zoals die in de webshop van Vogelbescherming zijn te krijgen."
+        ],
+        "voeding": [ 
+            "Insecten.",
+            "Zaden.",
+            "Bessen.",
+            "Etensresten."
+        ],
+        "leefgebied": [ 
+            "Het platteland.",
+            "In de stad."
+        ],
+        "vogelzang": [
+            "./assets/audio/vogelzang/kauw.mp3"
+        ]
+        
+    },
+
 
 
     {
@@ -204,6 +231,7 @@
         "vogelzang": [
             "./assets/audio/vogelzang/merell.mp3"
         ]
-    }    
+    }
+        
 
 ]
